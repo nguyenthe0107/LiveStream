@@ -1,0 +1,33 @@
+package olmo.wellness.android.domain.model.voucher
+
+data class VoucherInfo(
+    val id: Int?=null,
+    val description: String?=null,
+    val isSelected: Boolean ?= false,
+    val available: Boolean ?= false,
+    val startedAt: Long?=null,
+    val expireAt: Long?=null,
+    val createdAt: Long?=null,
+    val lastModified: Long?=null,
+    val voucher: String?=null,
+    val type: String?=null,
+    val shortDescription: String?=null,
+    val bannerUrl: String?=null,
+    val storeIds: List<Int>?=null,
+    val serviceIds: List<Int>?=null,
+    val reductionAmount: Float?=null,
+    val reductionLimit: Int?=null,
+    val isPublic: Boolean?=null,
+    val startDate: Long?=null,
+    val endDate: Long?=null,
+    val maxQuantity: Int?=null,
+    val perUserLimit: Int?=null,
+    val active: Boolean?=null,
+    val lastSyncAt: Long?=null,
+    val redeemedVoucher: Float?=null,
+    val code: String?=null,
+    val campaign: String?=null,
+    val info: String?=null,
+    val reductionType: String?=null,
+    val voucherDbId: Double?=null
+)

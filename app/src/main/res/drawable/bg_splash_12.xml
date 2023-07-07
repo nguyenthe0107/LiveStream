@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/tiffany_blue_500" />
+    </item>
+    <item
+        android:width="124dp"
+        android:height="90dp"
+        android:drawable="@drawable/image_splash_12"
+        android:gravity="center" />
+</layer-list>

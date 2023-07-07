@@ -1,0 +1,703 @@
+<resources xmlns:tools="http://schemas.android.com/tools" translatable="false">
+    <string name="app_name">Kepler</string>
+    <!-- SignUp Screen-->
+    <string name="tv_signup">Sign up</string>
+    <string name="hint_name_input">Your name</string>
+    <string name="hint_password_input">Password</string>
+    <string name="hint_re_password_input">Retype password</string>
+    <string name="hint_email_input">Email address</string>
+    <string name="hint_email_input_signup">Email</string>
+    <string name="hint_phone_input">Phone number</string>
+    <string name="tv_des_password_signup">Password must be with a minimum of 8 characters that contains at least one lowercase letter, one uppercase letter, one number, and one special character</string>
+    <string name="btn_action_next">Next</string>
+    <string name="tv_des_have_account">Already have an account?</string>
+    <string name="tv_des_login">Log in</string>
+    <string name="tv_chat_center">Chat center</string>
+    <string name="tv_notification">Notification</string>
+    <string name="tv_hotline">Hotline</string>
+    <string name="content_hotline">028 7777 76 78</string>
+    <string name="tv_login_failed" tools:ignore="ExtraTranslation">Login Failed</string>
+    <string name="tv_privacy_policy">By continuing, you agree to Kepler</string>
+    <string name="tv_privacy_policy_1">Privacy Policy</string>
+    <string name="tv_and">&amp;</string>
+    <string name="tv_privacy_policy_2">Terms of Service</string>
+    <string name="tv_signup_with_email">Sign up with email</string>
+    <string name="tv_signup_with_phone">Sign up with phone</string>
+    <string name="tv_signup_failed" tools:ignore="ExtraTranslation">Sign Failed</string>
+    <string name="text_welcome_signup">Welcome to Kepler</string>
+    <string name="text_des_welcome_signup">Create an account to get started on your health and happiness journey</string>
+    <string name="text_action_login" tools:ignore="ExtraTranslation">Sign in</string>
+    <string name="text_action_login_by_email">Continue with Email</string>
+    <string name="text_action_login_by_phone">Continue with Phone</string>
+    <string name="text_or_general">Or</string>
+    <string name="text_action_login_by_google">Continue with Google</string>
+    <string name="text_action_signin_by_google">Sign in with Google</string>
+    <string name="text_title_user_type_select">You Are</string>
+    <string name="text_hilt_user_type_select">Please select</string>
+    <string name="action_sign_up">Sign Up</string>
+    <!-- End SignUp Screen-->
+
+    <!-- Select Category for Signup -->
+    <string name="text_choose_category">Great, let\'s get on your feet</string>
+    <string name="text_title_category">Please follow at least one topic</string>
+
+    <!-- End Select Category for Signup-->
+
+    <!-- SignIn Screen -->
+    <string name="tv_login">Sign in</string>
+    <string name="tv_login_by_phone">Sign in with Phone</string>
+    <string name="tv_login_by_mail">Sign in with Email</string>
+    <string name="tv_forgot_password">Forgot password?</string>
+    <string name="tv_login_with_phone_number">Log in with phone number </string>
+    <string name="tv_login_with_email">Log in with email</string>
+    <string name="tv_login_have_account">Don’t have an account?</string>
+    <string name="tv_header_sign_in">Sign in</string>
+    <string name="tv_sign_in_by_email">Email</string>
+
+    <!-- onError -->
+    <string name="tv_err_email_invalid">Please input a valid email address.</string>
+    <string name="tv_err_phone_invalid">Please enter a valid mobile number.</string>
+    <string name="tv_err_password_incorrect">Incorrect password.</string>
+    <string name="tv_err_password_miss_match">Mismatch password</string>
+    <string name="tv_err_account_not_exist">Account does not exist.</string>
+    <!-- End Login Screen-->
+
+    <!-- Password Condition -->
+    <string name="tv_des_condition_pw">Password must be with a minimum of 8 characters that at least:</string>
+    <string name="tv_des_pw_letter">One lowercase letter</string>
+    <string name="tv_des_pw_uppercase">One uppercase letter</string>
+    <string name="tv_des_pw_number">One number</string>
+    <string name="tv_des_pw_special_charactor">One special character</string>
+
+    <!-- Verify OTP Screen -->
+    <string name="tv_title_header">Enter OTP Code</string>
+    <string name="tv_title_input_otp">Please enter the 6-digit code sent to:</string>
+    <string name="tv_title_input_otp_email">Please check your email</string>
+    <string name="tv_title_input_otp_phone">Please check your SMS</string>
+    <string name="tv_title_command_input_otp">Enter Verification Code</string>
+    <string name="tv_des_did_not_resend_otp">Did not receive the code?</string>
+    <string name="tv_action_resend_otp">Resend</string>
+    <string name="tv_content_first_resend_otp">Resend</string>
+    <string name="tv_content_second_resend_otp">after</string>
+    <string name="tv_content_third_resend_otp">second</string>
+    <string name="button_action_explore">Explore Kepler</string>
+
+    <string name="buyer">You Are Buyer</string>
+    <string name="shop_owner">You Are Service Provider</string>
+    <string name="kols">You Are KOLs/KOC</string>
+    <string name="buyer_action">I\'m here to experience</string>
+    <string name="shop_owner_action">I\'m to provide service</string>
+    <string name="kols_action">I\'m here to make impact</string>
+
+    <!-- Forgot Password -->
+    <string name="title_forgot_password">Forgot Password</string>
+    <string name="des_reset_password">We\'ll send you on OTP code to reset your password</string>
+
+    <!-- Create Password-->
+    <string name="title_create_new_password">New Password</string>
+    <string name="text_des_new_password">Password must be with a minimum of 8 characters that contains at least one lowercase letter, one uppercase letter, one number, and one special character</string>
+    <string name="hint_current_password_input">Current password</string>
+    <string name="hint_new_password_input">Password</string>
+
+    <!-- UserRegistered Screen -->
+    <string name="title_user_registered">User Already Registered</string>
+    <string name="description_user_registered">User Already Registered</string>
+    <string name="text_des_user_registered">Please proceed to sign in if this account belong to you. Alternatively, you may recover your account by choosing “Forgot Password?”</string>
+    <string name="title_user_not_registered">User Not Registered</string>
+    <string name="description_not_user_registered">Please proceed to sign up if you want to continue. Alternatively, you may recover your account by choosing “Forgot Password?”</string>
+
+
+    <!-- Value -->
+    <string name="gcp_id">398039076911-9p0u8m4m9rtqrhatrjuksom0fgtsv9pl.apps.googleusercontent.com</string>
+<!--    <string name="key_deepar">5979bbcf37e9ca4b9300ce5fb6eb0de243e4896e8f92d114a93cf4746c8ea1f2df3cc502398647f3</string>-->
+    <string name="key_deepar">7fb05d38ed37f9ea451e3ec4ab827b57ca8a2fd9a95b37e373e2c7d5ba905169c255b3b7b0e8e144</string>
+    <string name="next">Next</string>
+    <string name="retry">Retry</string>
+    <string name="unknown_error">The device has a unknown problem, please try again later</string>
+    <string name="save">Save</string>
+    <string name="process">Process</string>
+
+
+    <string name="settings">Settings</string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="user_management">User Management</string>
+    <string name="log_out">Logout</string>
+    <string name="seller_identify_verification_title">OLMO WELLNESS SELLER HUB</string>
+    <string name="seller_identify_verification">Seller Identity Verification</string>
+    <string name="seller_identify_verification_step1">Seller Identity Verification 1</string>
+    <string name="seller_identify_verification_step2">Seller Identity Verification 2</string>
+    <string name="verification_step_1_desc">Before starting, please ensure you have the following handy</string>
+    <string name="verification_step_1_desc_sub">We may require additional information or documents later</string>
+    <string name="verification_step_1_business">Business and\nContact address</string>
+    <string name="verification_step_1_phone">Mobile or Telephone\n number</string>
+    <string name="verification_step_1_credit_cart">Chargeable\n Credit card</string>
+    <string name="verification_step_1_identity">Identity\n details</string>
+    <string name="verification_step_1_step_by_step">5 STEPS TO REGISTER ACCOUNT</string>
+    <string name="verification_step_1_info_business">Business\ninformation</string>
+    <string name="verification_step_1_info_seller">Seller\ninformation</string>
+    <string name="verification_step_1_info_billing">Billing</string>
+    <string name="verification_step_1_info_store">Store</string>
+    <string name="verification_step_1_info_service">Service Information</string>
+    <string name="verification_step_1_info_completed">Completed</string>
+    <string name="business_info">Business Information</string>
+    <string name="business_location">Business Location</string>
+    <string name="select_country">Select a country</string>
+    <string name="search_country">Search for a country</string>
+    <string name="tip_for_select_country">If no business, enter country of residence</string>
+    <string name="business_type">Business Type</string>
+    <string name="business_name">Business Name</string>
+    <string name="hint_business_name">John Doe/Yoga Training Company</string>
+    <string name="hint_business_type">Select an entity type</string>
+    <string name="business_address">Business Address</string>
+    <string name="zip_code">Zip/ Postal code (optional)</string>
+    <string name="detail_city">State/ Region/ Province</string>
+    <string name="district">City/ Town</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2 (Optional)</string>
+    <string name="contact">Contact</string>
+    <string name="error_empty_textfield">Please provide a value</string>
+    <string name="error_empty_dropdown_pick">Please provide a name</string>
+    <string name="seller_info">Seller Information</string>
+    <string name="country_of_citizenship">Country Of Citizenship</string>
+    <string name="country_of_birth">Country Of Birth</string>
+    <string name="select">Select</string>
+    <string name="upload">Upload %s</string>
+    <string name="proof_of_identity">Proof Of Identity</string>
+    <string name="hint_date">dd/mm/yyyy</string>
+    <string name="date_of_expire">Date Of Expiry</string>
+    <string name="country_of_issue">Country Of Issue</string>
+    <string name="residential_address">Residential Address</string>
+    <string name="add_more_address">Add another address</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="add_more_mobile_number">Add a new mobile number</string>
+    <string name="owner_of_business">is a beneficial owner of the business</string>
+    <string name="representative_of_business">is a legal representative of the business</string>
+    <string name="billing_info">Billing Information</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="credit_card_details">Credit Card Details</string>
+    <string name="credit_card_details_desc">This Credit Card is used to pay the monthly account maintenance fee – note that the card should be valid for more than 1 year.Do not fill in the Debit/Prepaid card, or Olmo Wellness will block the account to update the credit card.</string>
+    <string name="bank_account_details">Bank Account Details</string>
+    <string name="financial_institution">Financial Institution Name</string>
+    <string name="country">Country</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+    <string name="account_holder_name">Account Holder\'s Name</string>
+    <string name="bank_account_number">Bank Account Number</string>
+    <string name="retype_bank_account_number">Re-type Bank Account Number</string>
+    <string name="bank_branch">Bank Branch</string>
+    <string name="verify_additional_document">Verify Additional Document</string>
+    <string name="additional_document">Additional Document</string>
+    <string name="select_document_type">Select a document type</string>
+    <string name="upload_document">Upload Document</string>
+
+    <string name="store_info">Store information</string>
+    <string name="store_info_decs">Answer a few questions about your business so we can best assist you during onboarding. The answer you provide do not impact your abilioty to register for a selling account.</string>
+    <string name="store_name">Service name</string>
+    <string name="available">Available</string>
+    <string name="brand_owner_title">Are you the manufacturer/brand owner of the product?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="some_of_them">Some of them</string>
+    <string name="brand_register_title">Do you own a government registered trademark for the branded products you want to sell on Olmo Wellness?</string>
+    <string name="brand_license_title">Do you have licenses for your license?</string>
+    <string name="brand_category_title">Please choose category you want to sell</string>
+    <string name="submit">Submit</string>
+    <string name="thank_for_request">Thank you for your request</string>
+    <string name="verification_1_desc">Olmo Wellness will censor your Identify \n information and please update your email:\n [email seller] within 2 working days for \n further clarification and announce\n successful registration to you.</string>
+    <string name="bank_account_statement">Bank account statement</string>
+    <string name="card_account_statement">Card account statement</string>
+    <string name="passport">Passport</string>
+    <string name="id_card">ID card</string>
+    <string name="driver_license">Driver\'s license</string>
+
+    <string name="shop_business_type_owned">Shop owned business</string>
+    <string name="shop_business_type_publicly_listed">Publicly-listed business</string>
+    <string name="shop_business_type_private_owned">Privately-owned business</string>
+    <string name="shop_business_type_distributor">I am a distributor</string>
+    <string name="shop_business_type_import_export_agent">I am an import/export agent</string>
+    <string name="shop_business_type_individual">I am an individual</string>
+    <string name="shop_business_type_kols">I am a KOC/KOLs</string>
+
+    <string name="address_title">Address Title</string>
+    <string name="address_info">Address Info</string>
+    <string name="address">Address</string>
+    <string name="address_title_decs">Ex: Warehouse address, store address,…</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="skip">Skip</string>
+    <string name="continue_value">Continue</string>
+    <string name="save_value">Save</string>
+
+    <string name="uploading_instructions">Uploading Instructions</string>
+    <string name="uploading_instructions_decs">・Passport must be signed by the passport holder under Bearer\'s Signature and not expired.\n ・Name, passport number, date of birth, and expiration date must match the registration information.</string>
+    <string name="uploading_instructions_update_decs">・Readable, clear and well-lit \n・Not reflective, not blurry \n・No black and white images, no edited \n・Bilingual statement (English &amp; local language) with the name and issue date.\n・Upload .pdf file no more than 5MB</string>
+
+    <string name="identity_verification">Identity Verification</string>
+    <string name="upload_your_identity">Upload Your %s</string>
+    <string name="page_of_image_upload">Information Page Of %s</string>
+    <string name="cover_of_image_upload">Cover Of %s</string>
+    <string name="select_image">Select Image</string>
+    <string name="select_file">Select File</string>
+    <string name="identity_upload_title_warning">Ensure that the document meet all the standard below:</string>
+    <string name="identity_upload_decs_warning">・Readable, clear and well-lit \n・Not reflective, not blurry \n・No black and white images, no edited \n・Document is placed against a solid-colored \nbackground. Do not hold the document in your hand.</string>
+    <string name="document_upload_decs_warning">・Statement with at least 2 recent transactions or more. \n・Bilingual statement (English &amp; local language) with the name of the bank, branch, stamp and logo of the bank. \n・Statement issued within the last 90 days (preferably within 30 days)</string>
+    <string name="upload_document_warning">• Name, address, issue date, and issuer must be clearly visible \n• Upload .pdf file no more than 5MB.</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="done">Done</string>
+    <string name="error_validate_year">Do not choose a year nearly</string>
+    <string name="error_validate_expire_date">Date expire need greater than date now</string>
+    <string name="change">Change</string>
+    <string name="retype_account_number_not_match">Retype account number not match</string>
+    <string name="error_name_store" tools:ignore="TypographyDashes">Service name should be unique, alphanumeric, special characters and consist between 5- 30 characters</string>
+    <string name="take_a_photo">Take a photo</string>
+    <string name="permission_upload_identity_error">Please grant permissions to upload</string>
+    <string name="error_file_size">File upload is over size allowed</string>
+    <string name="upload_fail">Upload fail</string>
+
+    <!-- Step2 -->
+    <string name="title_business_license">Business License</string>
+    <string name="title_button_business_license">Upload Business License</string>
+    <string name="title_brand_license">Brand License</string>
+    <string name="title_button_brand_license">Upload Brand License</string>
+    <string name="title_electricity_bill">Electricity Bill</string>
+    <string name="title_button_electricity_bill">Upload Electricity Bill</string>
+    <string name="title_history_sell_report">History Sell Report</string>
+    <string name="title_button_history_sell_report">Upload History Sell Report</string>
+    <string name="title_button_upload_license">Upload License</string>
+
+    <!-- My Profile Dashboard -->
+    <string name="title_my_profile_dashboard">My Profile</string>
+    <string name="title_my_profile_name">Name</string>
+    <string name="title_my_profile_store_name">Store Name</string>
+    <string name="title_my_profile_your_name">Your Name</string>
+    <string name="hilt_my_profile_store_name">Set your store name</string>
+    <string name="title_my_profile_store_id">Store ID</string>
+    <string name="title_my_profile_username">Your Name</string>
+    <string name="title_my_profile_bio">Bio</string>
+    <string name="hilt_my_profile_bio">Set your Bio</string>
+    <string name="title_my_profile_gender">Gender</string>
+    <string name="hilt_my_profile_gender">Set your Gender</string>
+    <string name="title_my_profile_birthday">BirthDay</string>
+    <string name="hilt_my_profile_birthday">Set your DOB</string>
+    <string name="title_my_profile_phone">Phone</string>
+    <string name="hilt_my_profile_phone">Set your phone number</string>
+    <string name="title_my_profile_email">Email</string>
+    <string name="hilt_my_profile_email">Set your email</string>
+    <string name="title_my_profile_address">Address</string>
+    <string name="hilt_seller_profile_address">Set your business location</string>
+    <string name="hilt_my_profile_user_address">Set your address</string>
+    <string name="title_my_profile_password">Password</string>
+    <string name="title_my_profile_social_media">Social Media Accounts</string>
+    <string name="title_hint_enter_input_filed">Enter value</string>
+    <string name="title_check_mail">Check your email.</string>
+    <string name="des_check_mail">Kepler have sent a verify code to your email</string>
+    <string name="des_img_check_mail">illustration holder</string>
+    <string name="title_button_open_mail">Open Your Email App</string>
+    <string name="title_action_click_to">Click to </string>
+    <string name="title_action_resend">resend</string>
+    <string name="value_default_store_name">Store name</string>
+
+    <!-- Message Success -->
+    <string name="title_success_email">Awesome</string>
+    <string name="title_success_bio">Great!</string>
+    <string name="title_success_general">Available</string>
+
+    <!-- Account switcher-->
+    <string name="paid">Paid</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="refund">Refund</string>
+    <string name="completed">Completed</string>
+
+    <!-- Warning Delete Account -->
+    <string name="title_delete_account_warning">Important</string>
+    <string name="header_account_warning">Please read our policies and term carefully before deleting:</string>
+    <string name="content_warning_account_warning_1">・Your account should have no pending purchase and/or sales.\n</string>
+    <string name="content_warning_account_warning_2">・After successful deletion of your account, Olmo Wellness will continue to hold transactional data for financial audit purposes.\n</string>
+    <string name="content_warning_account_warning_3">・After successful deletion of your account, you will not be able to log in to a deleted account and view previous account history.\n</string>
+    <string name="content_warning_account_warning_4">・Olmo Wellness reserves the right to reject future account creation requests.</string>
+
+    <!-- Select Reason Delete Account -->
+    <string name="title_select_reason_delete_account">Choose Your Reason</string>
+    <string name="title_group_select_reason_delete_account">Select your reason</string>
+    <string name="content_group_select_reason_delete_account_1">I spend too much time on Olmo Wellness</string>
+    <string name="content_group_select_reason_delete_account_2">I have a privacy concern</string>
+    <string name="content_group_select_reason_delete_account_3">I don\'t feel safe on Olmo Wellness</string>
+    <string name="content_group_select_reason_delete_account_4">My account was hacked</string>
+    <string name="content_group_select_reason_delete_account_5">I am no longer find Olmo Wellness useful</string>
+
+    <!-- Chat Setting -->
+    <string name="title_chat_setting">Chat Settings</string>
+
+    <!-- Auto Reply -->
+    <string name="title_auto_reply">Auto Reply</string>
+
+    <!-- MessageShortcut -->
+    <string name="title_message_shortcut">Message Shortcuts</string>
+    <string name="title_create_message_shortcut">New Message Shortcuts</string>
+
+    <string name="account_switcher_my_service">My Services</string>
+    <string name="account_switcher_add_new_service">Add A New Service</string>
+    <string name="account_switcher_live_scheduling">Live Scheduling</string>
+    <string name="account_switcher_activities">Activities</string>
+    <string name="account_switcher_refferal_friends">Refferal Your Friends</string>
+    <string name="account_switcher_support_center">Support Center</string>
+    <string name="account_switcher_talk_with_kepler">Talk With Kepler</string>
+    <string name="account_switcher_my_income">My Income</string>
+    <string name="account_switcher_wait">Wait</string>
+    <string name="account_switcher_my_circle">My Circle</string>
+    <string name="account_switcher_seller_hub">Seller Hub</string>
+    <string name="account_switcher_referral">Referral Your Friends</string>
+    <string name="account_switcher_account_setting">Account Settings</string>
+    <string name="account_switcher_talk_with_olmo">Talk With Olmo Wellness</string>
+    <string name="switch_to_buyer">Switch To Buyer</string>
+    <string name="account_switcher_calendar_scheduling">Calendar</string>
+    <string name="kepler_balance">Kepler Balance</string>
+    <string name="account_switcher_my_bookings">My Bookings</string>
+
+    <!-- Gender -->
+    <string name="title_male">Male</string>
+    <string name="title_female">Female</string>
+    <string name="title_other">Other</string>
+
+    <!-- Validate Profile -->
+    <string name="des_profile_username">Your name should be alphabet characters and contain between 8–30 characters.</string>
+    <string name="error_profile_username">Error profile username</string>
+    <string name="error_profile_email">Enter corrected email address!</string>
+    <string name="error_profile_email_duplicate">Email is already registered</string>
+    <string name="des_profile_email">Please Input email</string>
+    <string name="des_profile_bio">500 characters only</string>
+    <string name="error_profile_bio">Maximum 500 characters</string>
+    <string name="des_profile_phone">Enter your phone number to generate an OTP</string>
+    <string name="err_profile_phone">Error phone invalid</string>
+    <string name="err_service_name_already_registered">Service name is already registered</string>
+    <string name="des_profile_service_name">Service name should be alphanumeric, special characters and consist between 8–30 characters</string>
+    <string name="des_profile_service_bio">Set your service. 500 Characters only</string>
+    <string name="err_profile_service_bio">Oppsy! You only have maximum 500 characters</string>
+    <string name="error_duplicate_phone_number">Opps! the number you have entered is already registered with us. Please check number again </string>
+    <!-- VerifyCode Success -->
+    <string name="text_content_slide_2">Before starting your business, please continue to set up your <b>Seller Identity Verification</b></string>
+    <string name="text_hint_optional">(Optional)</string>
+
+    <!-- Google Authenticator -->
+    <string name="text_enable_verification">Enable Two-Step Verification</string>
+    <string name="text_action_enter_code_from_google_authenticator">Enter the code generated by Google Authenticator app</string>
+
+    <!--  LiveStream  -->
+    <string name="lb_schedule_livestream">Schedule LiveStream</string>
+    <string name="lb_add_new_schedule_livestream">Add new schedule livestream</string>
+    <string name="lb_jump_to_day">Jump To Day</string>
+    <string name="text_field_hint">Message</string>
+    <string name="emojis_label">Emojis</string>
+    <string name="stickers_label">Stickers</string>
+    <string name="not_available">Functionality currently not available</string>
+    <string name="not_available_subtitle">Grab a beverage and check back later!</string>
+    <string name="emoji_selector_desc">Emoji selector</string>
+    <string name="picture_selector_desc">Picture selector</string>
+    <string name="emoji_selector_bt_desc">Show Emoji selector</string>
+    <string name="dm_desc">Direct Message</string>
+    <string name="attach_photo_desc">Attach Photo</string>
+    <string name="map_selector_desc">Location selector</string>
+    <string name="videochat_desc">Start videochat</string>
+    <string name="send">Send</string>
+    <string name="text_field_desc">Text input</string>
+    <string name="jumpBottom">Jump to bottom</string>
+
+    <string name="fewSeconds">Just now</string>
+    <string name="minuteAgo">minutes ago</string>
+    <string name="hourAgo">hours ago</string>
+    <string name="dayAgo">day ago</string>
+
+    <!-- Dialog Confirm -->
+    <string name="title_dialog_confirm">Confirmation</string>
+    <string name="content_dialog_confirm">Are you sure that you want to end your livestream?</string>
+    <string name="action_cancel_dialog_confirm">Cancel</string>
+    <string name="action_confirm_dialog_confirm">End Now</string>
+    <string name="action_confirm_dialog_close">Close</string>
+    <string name="title_confirm_dialog_finished_livestream">Thank you for watching</string>
+    <string name="title_confirm_dialog_removed_livestream">Video has been removed</string>
+    <string name="title_confirm_dialog_following_success">Following successfully</string>
+
+    <!-- Dialog Warning Input Title-->
+    <string name="title_dialog_warning_input_title_livestream">Warning</string>
+    <string name="content_dialog_input_title_livestream">Please enter title information before start livestream </string>
+    <string name="action_cancel_dialog_input_title_livestream">Cancel</string>
+    <string name="action_confirm_dialog_input_title_livestream">Accept</string>
+
+    <!-- Summary LiveStream -->
+    <string name="action_discard_video">Discard Video</string>
+    <string name="action_save_video">Save Video</string>
+
+    <string name="lb_add_formation">Add information</string>
+    <string name="lb_entet_title">Enter title</string>
+    <string name="lb_50_characters">50 characters only</string>
+    <string name="lb_description">Description</string>
+    <string name="lb_categories">Categories</string>
+    <string name="lb_is_this_an_event_for_yout_community">Is this an event for your community?</string>
+    <string name="lb_your_livestream_will_be_displayed_on_kepler_events">Your livestream will be displayed on Kepler events</string>
+    <string name="lb_add_description">Add Description</string>
+    <string name="hint_description_livestream">Describe your livestream, add #hashtag to make your livestream trending</string>
+    <string name="lb_reply_to">Reply to</string>
+    <string name="lb_like_this_comment">Like This Comment</string>
+    <string name="lb_add_comment">Add comment</string>
+    <string name="lb_confirm">Confirm</string>
+    <string name="lb_back">Back</string>
+    <string name="lb_active_now">Active now</string>
+    <string name="text_share_profile">Share On Your Profile</string>
+    <string name="text_share_social_profile">Share On Social Media Network</string>
+    <string name="text_send_message_to_host">Send Messages To Host</string>
+    <string name="text_report_to_admin">Report To Kepler Admin</string>
+    <string name="title_text_report">Report</string>
+    <string name="title_select_reason">Select a reason</string>
+
+    <!-- Schedule -->
+    <string name="title_upcoming">Upcoming</string>
+    <string name="lb_live_scheduling">Live Scheduling</string>
+    <string name="lb_change_photo">Change Photo</string>
+    <string name="lb_set_time">Set Time</string>
+    <string name="btn_create_live_scheduling">Create Live Scheduling</string>
+    <string name="lb_everyone">Everyone</string>
+    <string name="lb_followers_only">Followers Only</string>
+    <string name="lb_who_can_see_your_livestream">Who can see your livestream?</string>
+    <string name="lb_your_awesome_description">Your Awesome Description</string>
+    <string name="btn_add_your_availability">Add Your Availability</string>
+    <string name="lb_set_your_availability">Set Your Availability</string>
+    <string name="lb_prceed">Proceed</string>
+    <string name="lb_proceed_anyway">Proceed Anyway</string>
+
+    <!-- Account Setting -->
+    <string name="title_item_header_my_profile">My Account</string>
+    <string name="title_item_header_settings">Settings</string>
+    <string name="title_item_my_profile">My Profile</string>
+    <string name="title_item_request_delete_account">Request Delete Account</string>
+    <string name="title_item_business_hour">Business Hours</string>
+    <string name="title_item_chat_setting">Chat Settings</string>
+    <string name="title_item_notification_setting">Notifications Settings</string>
+    <string name="title_item_privacy_setting">Privacy Settings</string>
+    <string name="title_item_language">Language</string>
+    <string name="title_item_contact_syncing">Contact Syncing</string>
+    <string name="title_item_share_profile">Share Profile</string>
+    <string name="lb_off">Off</string>
+    <string name="lb_languages">Languages</string>
+    <string name="lb_select_categories">Select Categories</string>
+    <string name="lb_share_profile">Share Profile</string>
+    <string name="lb_share_your_kepler_profile">Share Your Kepler Profile</string>
+    <string name="lb_contact_syncing">Contact Syncing</string>
+    <string name="lb_allow_kepler_to_access_contact_list">Allow Kepler to access contact list</string>
+
+    <!-- Notification Setting -->
+    <string name="title_notification_setting">Notification Settings</string>
+    <string name="title_notification_setting_setion_push_noti">Push Notifications</string>
+    <string name="title_notification_setting_turn_on_all">Turn On Notifications for All</string>
+    <string name="title_notification_setting_section_my_noti">My Notifications</string>
+    <string name="title_notification_setting_kepler_update">Kepler Updates</string>
+    <string name="title_notification_setting_live_stream">Livestream</string>
+    <string name="title_notification_setting_your_circle">Your Circle</string>
+    <string name="title_notification_setting_messages">Messages</string>
+    <string name="title_notification_setting_wallet_updates">Wallet Updates</string>
+
+    <!-- Notification List -->
+    <string name="title_notification_section_recently">Recently</string>
+    <string name="title_notification_section_older">Older</string>
+    <string name="title_notification_empty">Your new notifications will display here</string>
+
+    <!-- Privacy Setting -->
+    <string name="title_privacy_setting">Privacy Settings</string>
+    <string name="title_privacy_activity">Private Activities</string>
+    <string name="des_privacy_activity">Turn on private activities to hide your like and comment activities from all your followers.</string>
+    <string name="title_privacy_vacation_mode">Vacation Mode</string>
+    <string name="des_privacy_vacation_mode">Turn on vacation mode to let people know you are unavailable. Buyers won’t be able to place orders or start new conversations with you. If you have pending orders that need to be fullfiled turning on vacation mode does not cancel or pause these orders.</string>
+    <string name="title_block_contacts">Block Contacts</string>
+    <string name="title_privacy_social_media_accounts">Social Media Accounts</string>
+    <string name="title_privacy_password">Passwords</string>
+    <string name="title_dialog_change_privacy">Change Privacy</string>
+    <string name="des_dialog_change_privacy">Your followers will be able to see your likes</string>
+    <string name="title_dialog_change_vocation">Change Vocation Mode</string>
+    <string name="des_dialog_change_vocation">Buyers CANNOT place orders and start a conversation with you</string>
+
+    <!-- Block Contacts -->
+    <string name="des_block_contacts">You have no block contacts</string>
+    <string name="des_top_block_add_disturber">You have no block contacts</string>
+    <string name="des_block_add_disturber">once you block someone, that person can no longer interact with you</string>
+    <string name="button_add_disturber">Add disturbers to block list</string>
+    <string name="action_block">Block</string>
+    <string name="action_unblock">Unblock</string>
+    <string name="des_search_block_contacts">The list below shows results for people whose profile includes words similar to keywords above. These people may not be your friends or followers</string>
+
+    <string name="lb_live_chat_during_livestream">Live Chat During Livestream</string>
+    <string name="lb_private_chat_during_livestream">Private Chat During Livestream</string>
+    <string name="lb_create_your_message_shortcut">Create your message shortcut</string>
+    <string name="lb_setup_automatic_response">Setup Automatic Response</string>
+    <string name="lb_title">Title</string>
+    <string name="lb_set_your_own_store_schedule">Set your own store schedule</string>
+
+    <!-- Social Setting -->
+    <string name="title_social_setting">Connect your Social Media</string>
+    <string name="title_google_social">Google</string>
+    <string name="title_tiktok_social">Tiktok</string>
+    <string name="title_instagram_social">Instagram</string>
+    <string name="lb_search">Search</string>
+    <string name="lb_results">Results</string>
+
+    <!-- LiveOption BottomSheet -->
+    <string name="title_pin_to_spot">Pin To Spotlight</string>
+    <string name="title_delete">Delete</string>
+    <string name="title_share_on_social_media">Share On Social Media Network</string>
+    <string name="lb_see_all">See all</string>
+    <string name="lb_add_to_your_calendar">Add To Your Calendar</string>
+    <string name="lb_notify_followers">Notify Followers</string>
+    <string name="lb_host">Host</string>
+    <string name="lb_no_comments">No comments</string>
+    <string name="lb_hide">Hide</string>
+    <string name="lb_view_reply">View Reply</string>
+
+    <!-- Following BottomSheet -->
+    <string name="action_un_follow">Unfollow</string>
+    <string name="action_report">Report</string>
+
+    <!-- Dialog Confirm -->
+    <string name="title_des_unfollow">Are you sure that you want to unfollow</string>
+    <string name="action_unfollow">Unfollow</string>
+    <string name="action_keep_follow">Keep Follow</string>
+    <string name="lb_messages">Messages</string>
+    <string name="lb_recharge_now">Recharge Now</string>
+    <string name="lb_package_options">Package Options</string>
+    <string name="lb_balance">Balance</string>
+    <string name="lb_recharge">Recharge</string>
+    <string name="lb_payment_methods">Payment Methods</string>
+    <string name="lb_pay_now">Pay now</string>
+    <string name="lb_try_again">Try again</string>
+    <string name="lb_purchase_failure">Purchase failure</string>
+    <string name="lb_purchase_success">Purchase Successful</string>
+    <string name="lb_order_id_general">Mã số đơn hàng (Booking ID)</string>
+    <string name="lb_action_booking_detail">Booking detail</string>
+    <string name="lb_action_booking_livestream">Livestream</string>
+    <!-- Profile Following -->
+    <string name="action_follow">Follow</string>
+    <string name="action_message">Message</string>
+    <string name="action_following">Following</string>
+
+
+    <string name="lb_no_data">No data</string>
+    <string name="lb_search_message">Search message</string>
+    <string name="lb_event">Event</string>
+
+    <!-- Info Package Donate-->
+    <string name="content_package_1">What are Kepler coins and how to recharge them</string>
+    <string name="content_package_2">My recharge is suspended</string>
+    <string name="content_package_3">Purchasing and using coins is not available</string>
+    <string name="content_package_4">My payment couldn\'t be processed</string>
+    <string name="content_package_5">I didn\'t receive my coins after making payment</string>
+    <string name="content_package_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed velit dignissim sodales ut. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Ornare quam viverra orci sagittis eu volutpat odio. Sit amet risus nullam eget felis. Ut lectus arcu bibendum at varius vel pharetra vel. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Luctus venenatis lectus magna fringilla. Consequat semper viverra nam libero justo. Eleifend quam adipiscing vitae proin. Pharetra convallis posuere morbi leo. Urna condimentum mattis pellentesque id nibh tortor.</string>
+    <string name="lb_my_balance">My Balance</string>
+    <string name="lb_my_reward">My Reward</string>
+    <string name="lb_input_value">Input Value (đ)</string>
+    <string name="input_value">Input value...</string>
+    <string name="lb_bank_account">Bank Account</string>
+    <string name="lb_withdraw_now">Withdraw now</string>
+    <string name="lb_select">Select</string>
+    <string name="lb_select_all">Select All</string>
+
+    <string name="lb_transaction_successfully">Once a transaction is successfully processed, it will reflect on your account <b>within 24–48 hours.</b> However, it can take up to <b>five business days</b> for the funds to <b>appear in your financial account</b></string>
+
+    <!-- Limit OTP -->
+    <string name="text_limit_otp_header">Over 5 time OTP request</string>
+    <string name="text_limit_otp_description">For any related concern please contact our Customer Service</string>
+    <string name="lb_account_deletion">Account Deletion</string>
+    <string name="lb_warning_exit_app">Please click BACK again to exit</string>
+    <string name="lb_no_connection_found">No connection found</string>
+    <string name="lb_please_turn_on_internet">Please turn on Internet!</string>
+
+     <!-- Booking service -->
+    <string name="title_add_booking_service">Your Service</string>
+    <string name="action_add_booking_service">Add</string>
+    <string name="title_quantity_booking_service">List Of Service Added : </string>
+    <string name="action_back">Back</string>
+    <string name="title_add_booking_services">Your Services</string>
+
+    <!-- List Booking service -->
+    <string name="lb_list_of_services">List Of Services</string>
+
+    <!-- Contact information -->
+    <string name="title_contact_information_booking">Contact Information</string>
+    <string name="title_surname_information_booking">Họ</string>
+    <string name="hilt_surname_information_booking">Điền Họ của bạn...</string>
+    <string name="title_name_information_booking">Tên</string>
+    <string name="hilt_name_information_booking">Điền Tên của bạn...</string>
+    <string name="title_phone_information_booking">Điện thoại</string>
+    <string name="hilt_phone_information_booking">Điền số điện thoại liên lạc...</string>
+    <string name="title_email_information_booking">Email</string>
+    <string name="hilt_email_information_booking">Điền email của bạn...</string>
+    <string name="title_promotion_information_booking">Mã khuyến mại</string>
+    <string name="label_has_promotion_information_booking">Khuyến mãi</string>
+    <string name="title_has_promotion_information_booking">Voucher</string>
+    <string name="action_clear_promotion_information_booking">Xoá</string>
+    <string name="title_select_promotion_information_booking">Chọn hoặc nhập mã khuyến mãi...</string>
+    <string name="title_total_money_information_booking">Tổng cộng</string>
+    <string name="title_content_contact">Nếu bạn có nhu cầu xuất hóa đơn vui lòng liên hệ</string>
+    <string name="email_invoice_company">invoice@olmowellness.com</string>
+
+    <!-- Voucher Service -->
+    <string name="title_voucher_information_booking">Voucher</string>
+    <string name="label_voucher_condition_information_booking">Điều kiện</string>
+    <string name="label_voucher_time_information_booking">HSD</string>
+    <string name="value_voucher_default_information_booking">Kepler</string>
+    <string name="lb_maximim_10_images">Maximum 10 images</string>
+
+    <!-- My dashboard booking service -->
+    <string name="title_my_booking">My Bookings</string>
+    <string name="state_draft_booking">Draft</string>
+    <string name="state_payment_pending_booking">Pending</string>
+    <string name="state_failed_booking">Fail</string>
+    <string name="state_confirmed_booking">Confirmed</string>
+    <string name="state_completed_booking">Completed</string>
+    <string name="state_not_used_booking">Not Used</string>
+    <string name="state_used_booking">Used</string>
+    <string name="state_request_to_cancel_booking">Request To Cancel</string>
+    <string name="state_no_refund_booking">No Refund</string>
+    <string name="state_refunded_booking">Refunded</string>
+    <string name="state_refund_pending_booking">Refund Pending</string>
+
+    <!-- Payment Status -->
+    <string name="status_payment_success">SUCCESS</string>
+    <string name="status_payment_draft">DRAFT</string>
+    <string name="status_payment_failed">Failed</string>
+    <string name="status_payment_processing">PENDING</string>
+
+    <string name="content_payment_success">Thanh toán thành công</string>
+    <string name="content_payment_draft">Khởi tạo</string>
+    <string name="content_payment_failed">Thanh toán thất bại</string>
+    <string name="content_payment_processing">Đang thanh toán</string>
+
+
+    <!-- My dashboard booking service details -->
+    <string name="title_status_booking_details">Booking status</string>
+    <string name="title_id_booking_details">Booking ID</string>
+    <string name="title_time_created_booking_details">Ngày giờ đặt</string>
+    <string name="title_quantity_customers_booking_details">Số lượng khách</string>
+    <string name="title_duration_booking_details">Thời lượng</string>
+    <string name="title_address_booking_details">Địa điểm</string>
+    <string name="title_name_customer_booking_details">Khách đặt</string>
+    <string name="title_phone_customer_booking_details">Điện thoại</string>
+    <string name="title_email_customer_booking_details">Email</string>
+    <string name="title_payment_method_customer_booking_details">Thanh toán</string>
+    <string name="title_status_payment_method_booking_details">Trạng thái thanh toán</string>
+    <string name="text_hotline_booking_details">Đội ngũ chăm sóc khách hàng sẽ gọi và tư vấn cho bạn trong vòng 24 - 48 giờ về điều kiện hoàn hủy hoặc bạn có thể liên lạc với chúng tôi theo khung giờ sau</string>
+    <string name="text_time_working_hotline_booking_details">Thời gian làm việc: 8:00 - 18:00 hàng ngày (Bao gồm ngày nghỉ, ngày Lễ)</string>
+    <string name="text_schedule_booking_details">Lưu ý: chỉ được đổi lịch miễn phí 1 lần duy nhất. Nếu bạn có bất kỳ thắc mắc nào vui lòng liên lạc với chúng tôi theo khung giờ sau</string>
+    <string name="draft_booking_status">Khởi tạo</string>
+    <string name="payment_pending_booking_status">Đang thanh toán</string>
+    <string name="fail_booking_status">Đặt vé không thành công</string>
+    <string name="completed_booking_status">Đặt vé thành công</string>
+    <string name="no_used_booking_status">Không sử dụng dịch vụ</string>
+    <string name="used_booking_status">Đã trải nghiệm dịch vụ</string>
+    <string name="request_to_cancel_booking_status">Yêu cầu hủy booking</string>
+    <string name="no_refund_booking_status">Không hoàn tiền</string>
+    <string name="refunded_booking_status">Đã hoàn tiền</string>
+    <string name="refunding_booking_status">Đang hoàn tiền</string>
+    <string name="lb_book_now">Book now</string>
+    <string name="lb_book">Book</string>
+    <string name="lb_from">from</string>
+    <string name="lb_add_to_cart">Add to Cart</string>
+    <string name="lb_my_card">My Cart</string>
+    <string name="lb_total">Total</string>
+</resources>

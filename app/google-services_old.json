@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "398039076911",
+    "project_id": "olmo-wellness-a489a",
+    "storage_bucket": "olmo-wellness-a489a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398039076911:android:0afa6f9c61692564bc76da",
+        "android_client_info": {
+          "package_name": "olmo.wellness.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398039076911-tbqc04uluu0dkr325hurikttdq1fmte0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "olmo.wellness.android",
+            "certificate_hash": "28d2e63fd9eb04f7a4e8e79288d37a4e9f08da5d"
+          }
+        },
+        {
+          "client_id": "398039076911-9p0u8m4m9rtqrhatrjuksom0fgtsv9pl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApPwg6FJ50ntJmxd2VcjphasTbQzJQXLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398039076911-9p0u8m4m9rtqrhatrjuksom0fgtsv9pl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

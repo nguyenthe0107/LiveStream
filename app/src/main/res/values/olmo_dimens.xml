@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_18dp">18dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="textSizeMicro">5sp</dimen>
+    <dimen name="textSizeSmall">8sp</dimen>
+    <dimen name="textSizeMediumMinor2X">9sp</dimen>
+    <dimen name="textSizeMediumMinor">10sp</dimen>
+    <dimen name="textSizeMedium">11sp</dimen>
+    <dimen name="textSizeMediumPlus">12sp</dimen>
+    <dimen name="textSizeMediumPlus2X">13sp</dimen>
+    <dimen name="textSizeLarge">14sp</dimen>
+    <dimen name="textSizeLargePlus">15sp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+    <dimen name="textSizeHuge">17sp</dimen>
+    <dimen name="textSize_18">18sp</dimen>
+    <dimen name="textSize_20">20sp</dimen>
+    <dimen name="textSize_24">24sp</dimen>
+    <dimen name="text_lineHeight_16">16sp</dimen>
+    <dimen name="text_lineHeight_32">32sp</dimen>
+    <dimen name="text_lineHeight_20">20sp</dimen>
+    <dimen name="text_lineHeight_28">28sp</dimen>
+</resources>

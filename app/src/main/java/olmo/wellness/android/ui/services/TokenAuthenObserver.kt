@@ -9,7 +9,7 @@ class TokenAuthenObserver private constructor() {
 
     companion object : SingletonProvider<TokenAuthenObserver>({ TokenAuthenObserver() })
 
-    private val _result = MutableStateFlow<Boolean?>(null)
+    private val _result = MutableStateFlow<Boolean?>(false)
 
     val result: StateFlow<Boolean?>
         get() = _result.asStateFlow()

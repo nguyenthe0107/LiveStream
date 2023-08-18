@@ -615,7 +615,7 @@ class LiveStreamerViewModel @Inject constructor(
     }
 
     fun setSwitchCamera(context: Context) {
-        var position = when (positionCamera) {
+        val position = when (positionCamera) {
             CameraPosition.FRONT -> {
                 positionCamera = CameraPosition.BACK
                 CameraPosition.BACK.value

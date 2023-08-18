@@ -9,8 +9,8 @@ enum class AuthMethod(name: String) {
     SECRET_KEY("SECRET_KEY"),
 
     @Expose
-    @SerializedName("USER_PASS")
-    USER_PASS("USER_PASS"),
+    @SerializedName("PASSWORD")
+    USER_PASS("PASSWORD"),
 
     @Expose
     @SerializedName("PROVIDER")

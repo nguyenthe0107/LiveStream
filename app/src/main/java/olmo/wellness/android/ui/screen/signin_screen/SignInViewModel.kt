@@ -114,11 +114,13 @@ class SignInViewModel @Inject constructor(
                          isFirebase: Boolean?=false, method: String) {
         viewModelScope.launch {
             sharedPrefs.clearToken()
+            accessTokenWrapper.invokeAccessToken("")
             getInternalApiUseCase.login(req).collect { loginIDResponse ->
                 when (loginIDResponse) {
                     is Result.Success -> {
                         _isLoading.value = true
                         _errorBody.value = ""
+                        Log.e("WTF", " loginIDResponse-token ${loginIDResponse.data?.accessToken?.token}")
                         if(loginIDResponse.data?.verified == true && loginIDResponse.data.accessToken?.token?.isNotEmpty() == true){
                             setUserInfo(loginIDResponse.data)
                             loginIDResponse.data.let { loginResponse ->
@@ -242,6 +244,7 @@ class SignInViewModel @Inject constructor(
     private fun setUserInfo(loginData: LoginData?) {
         _userType.value = loginData?.userType ?: UserRole.BUYER.role
         loginData?.let {
+            accessTokenWrapper.saveAccessToken(loginData)
             accessTokenWrapper.invokeAccessToken(loginData.accessToken?.token)
             viewModelScope.launch {
                 val userInfo = UserInfo(

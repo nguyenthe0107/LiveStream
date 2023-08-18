@@ -183,9 +183,12 @@ class ApiIDTypeRepositoryImpl @Inject constructor(
                     }
                 } else {
                     val type: Type = object : TypeToken<ErrorResponseDTO?>() {}.type
-                    val errorResponse: ErrorResponseDTO =
-                        Gson().fromJson(it.errorBody()?.charStream(), type)
-                    emit(Result.Error<List<ProfileInfo>>(errorResponse.message))
+                    try {
+                        val errorResponse: ErrorResponseDTO =
+                            Gson().fromJson(it.errorBody()?.charStream(), type)
+                        emit(Result.Error<List<ProfileInfo>>(errorResponse.message))
+                    }catch (_: Exception){
+                    }
                 }
             }
             .onFailure {

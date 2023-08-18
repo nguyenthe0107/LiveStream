@@ -53,6 +53,7 @@ import olmo.wellness.android.ui.screen.search_home.SearchHomeBottomSheet
 import olmo.wellness.android.ui.screen.signup_screen.utils.LoaderWithAnimation
 import olmo.wellness.android.ui.screen.video_small.ACTION_PIP_CONTROL
 import olmo.wellness.android.ui.screen.video_small.onIntentReceivedForPipController
+import olmo.wellness.android.ui.services.TokenAuthenObserver
 import olmo.wellness.android.ui.theme.Color_LiveStream_Main_Color
 import olmo.wellness.android.ui.theme.Color_Purple_Gradient
 import olmo.wellness.android.ui.theme.White
@@ -69,6 +70,7 @@ fun OnBoardLiveScreen(
     val userModel = viewModel.userType.collectAsState()
     val profileModel = viewModel.profileModel.collectAsState()
     val coroutineScope = rememberCoroutineScope()
+    val tokenAuthenObserver: TokenAuthenObserver by lazy { TokenAuthenObserver.getInstance() }
     val userRole = if (userModel.value != null) {
         userModel.value
     } else {
@@ -394,7 +396,7 @@ private fun generateTabs(userRole: UserTypeModel?): List<BottomBarOnboardTabData
                 BottomBarOnboardTabData.TabType.PROFILE
             ),
         )
-
+        UserTypeModel.BUSINESS,
         UserTypeModel.SELLER,
         UserTypeModel.KOL -> listOf(
             BottomBarOnboardTabData(

@@ -15,6 +15,7 @@ class TokenAuthenticator @Inject constructor(
     private val observer: TokenAuthenObserver = TokenAuthenObserver.getInstance()
     override fun authenticate(route: Route?, response: Response): Request? {
         return if(accessTokenWrapper.getNewAccessToken()?.isNotEmpty() == true){
+            Log.e("WTF", " accessTokenWrapper.getNewAccessToken() ")
             response.request.newBuilder()
                 .header("Authorization", accessTokenWrapper.getNewAccessToken().orEmpty())
                 .build()

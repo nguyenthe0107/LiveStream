@@ -123,7 +123,7 @@ interface ApiService {
 
     @GET("profilelivestream")
     suspend fun getListProfileLiveStream(
-        @Query("userId") userId: Int?,
+        @Query("userId") userId: String?,
         @Query("limit") limit: Int?,
         @Query("page") page: Int?,
     ): Response<BaseResponse<LiveSteamShortInfo>>
@@ -137,7 +137,7 @@ interface ApiService {
 
     @GET("userFollow/followings")
     suspend fun getUserFollowing(
-        @Query("userId") userId: Int?,
+        @Query("userId") userId: String?,
     ): Response<BaseResponse<UserFollowDTO>>
 
     @GET("userFollow/followers")

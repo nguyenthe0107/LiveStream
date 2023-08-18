@@ -13,8 +13,13 @@ enum class UserTypeModel constructor(var value: String) {
     SELLER("SELLER"),
 
     @Expose
+    @SerializedName("BUSINESS")
+    BUSINESS("BUSINESS"),
+
+    @Expose
     @SerializedName("KOL")
     KOL("KOL");
+
 
     companion object {
         operator fun invoke(rawValue: String) = values().find { it.value == rawValue } ?: BUYER

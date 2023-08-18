@@ -26,6 +26,7 @@ import olmo.wellness.android.data.ApiIDTypeService
 import olmo.wellness.android.data.ApiService
 import olmo.wellness.android.data.ApiUploadService
 import olmo.wellness.android.di.interceptors.AuthInterceptor
+import olmo.wellness.android.di.interceptors.HttpCustomLoggingInterceptor
 import olmo.wellness.android.di.interceptors.TokenAuthenticator
 import olmo.wellness.android.sharedPrefs
 import olmo.wellness.android.webrtc.rtc.RtcService
@@ -39,6 +40,7 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
 const val cacheSize = (5 * 1024 * 1024).toLong()
+
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
@@ -62,18 +64,14 @@ object NetworkModule {
         authInterceptor: AuthInterceptor,
         tokenAuthenticator: TokenAuthenticator
     ): OkHttpClient.Builder {
+        val httpLoggingInterceptor =
+            HttpCustomLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
         val okHttpClientBuilder = OkHttpClient().newBuilder()
-        // val httpLoggingInterceptor = HttpLoggingInterceptor()
-        //httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
-        //val cache = getCacheDir()?.let { Cache(it, cacheSize) }
-        //okHttpClientBuilder.cache(cache)
-        okHttpClientBuilder.addNetworkInterceptor(HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.HEADERS
-            level = HttpLoggingInterceptor.Level.BODY
-        })
+        okHttpClientBuilder.addNetworkInterceptor(httpLoggingInterceptor)
         okHttpClientBuilder.addInterceptor(authInterceptor)
         okHttpClientBuilder.addInterceptor { chain ->
             val newRequestBuilder = chain.request().newBuilder()
+                .header("Origin", "https://dev-api.kepler.asia/wellness")
             chain.proceed(newRequestBuilder.build())
         }
         okHttpClientBuilder.connectTimeout(30L, TimeUnit.SECONDS)
@@ -114,9 +112,10 @@ object NetworkModule {
 
         client.addInterceptor { chain ->
             val newRequestBuilder = chain.request().newBuilder()
+                .header("Origin", "https://dev-api.kepler.asia/wellness")
             val originalRequest = chain.request()
             val shouldAddAuthHeaders = originalRequest.headers[Constants.IS_AUTHORIZABLE] != "false"
-            if(shouldAddAuthHeaders){
+            if (shouldAddAuthHeaders) {
                 if (sharedPrefs.getToken()?.isNotEmpty() == true) {
                     newRequestBuilder.addHeader(
                         "Authorization",
@@ -160,7 +159,7 @@ object NetworkModule {
             val newRequestBuilder = chain.request().newBuilder()
             val originalRequest = chain.request()
             val shouldAddAuthHeaders = originalRequest.headers[Constants.IS_AUTHORIZABLE] != "false"
-            if(shouldAddAuthHeaders){
+            if (shouldAddAuthHeaders) {
                 if (sharedPrefs.getToken()?.isNotEmpty() == true) {
                     newRequestBuilder.addHeader(
                         "Authorization",
@@ -187,18 +186,18 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideRtcService(socket: SocketApi): RtcServiceApi = RtcService(socket )
+    fun provideRtcService(socket: SocketApi): RtcServiceApi = RtcService(socket)
 
     @Provides
     @Singleton
-    fun provideSocketService(socketService: SocketService): SocketApi= socketService
+    fun provideSocketService(socketService: SocketService): SocketApi = socketService
 
 
     @Provides
     @Singleton
     fun provideEglContext(): EglBase.Context = EglBase.create().eglBaseContext
 
-    private fun provideUrl() : String{
+    private fun provideUrl(): String {
         val configAppModel = sharedPrefs.getConfigApp()
         var apiUrl = SERVER_URL_STAG
         val appNumber = BuildConfig.VERSION_CODE
@@ -206,9 +205,11 @@ object NetworkModule {
             appNumber >= configAppModel.android?.dev ?: 0 -> {
                 SERVER_URL_DEV
             }
-            appNumber >= configAppModel.android?.staging ?: 0 && appNumber < configAppModel.android?.dev ?: 0  -> {
+
+            appNumber >= configAppModel.android?.staging ?: 0 && appNumber < configAppModel.android?.dev ?: 0 -> {
                 SERVER_URL_STAG
             }
+
             else -> {
                 SERVER_URL_PRO
             }
@@ -216,7 +217,7 @@ object NetworkModule {
         return apiUrl
     }
 
-    private fun provideUrlForChatService() : String{
+    private fun provideUrlForChatService(): String {
         val configAppModel = sharedPrefs.getConfigApp()
         var apiUrl = CHAT_SERVER_URL_STAG
         val appNumber = BuildConfig.VERSION_CODE
@@ -224,9 +225,11 @@ object NetworkModule {
             appNumber >= configAppModel.android?.dev ?: 0 -> {
                 CHAT_SERVER_URL_DEV
             }
-            appNumber >= configAppModel.android?.staging ?: 0 && appNumber < configAppModel.android?.dev ?: 0  -> {
+
+            appNumber >= configAppModel.android?.staging ?: 0 && appNumber < configAppModel.android?.dev ?: 0 -> {
                 CHAT_SERVER_URL_STAG
             }
+
             else -> {
                 CHAT_SERVER_URL_PRO
             }
@@ -234,7 +237,7 @@ object NetworkModule {
         return apiUrl
     }
 
-    private fun provideUrlIDAPI() : String{
+    private fun provideUrlIDAPI(): String {
         val configAppModel = sharedPrefs.getConfigApp()
         var apiUrl = ID_SERVER_STAG
         val appNumber = BuildConfig.VERSION_CODE
@@ -242,9 +245,11 @@ object NetworkModule {
             appNumber >= configAppModel.android?.dev ?: 0 -> {
                 ID_SERVER_DEV
             }
-            appNumber >= configAppModel.android?.staging ?: 0 && appNumber < configAppModel.android?.dev ?: 0  -> {
+
+            appNumber >= configAppModel.android?.staging ?: 0 && appNumber < configAppModel.android?.dev ?: 0 -> {
                 ID_SERVER_STAG
             }
+
             else -> {
                 ID_SERVER_PRO
             }
@@ -252,7 +257,7 @@ object NetworkModule {
         return apiUrl
     }
 
-    private fun provideUrlUploadAPI() : String{
+    private fun provideUrlUploadAPI(): String {
         val configAppModel = sharedPrefs.getConfigApp()
         var apiUrl = UPLOAD_URL_STAG
         val appNumber = BuildConfig.VERSION_CODE
@@ -260,9 +265,11 @@ object NetworkModule {
             appNumber >= configAppModel.android?.dev ?: 0 -> {
                 UPLOAD_URL_DEV
             }
-            appNumber >= configAppModel.android?.staging ?: 0 && appNumber < configAppModel.android?.dev ?: 0  -> {
+
+            appNumber >= configAppModel.android?.staging ?: 0 && appNumber < configAppModel.android?.dev ?: 0 -> {
                 UPLOAD_URL_STAG
             }
+
             else -> {
                 UPLOAD_URL_PRO
             }

@@ -1089,8 +1089,9 @@ class ApiRepositoryImpl @Inject constructor(
     override suspend fun getListProfileLiveStream(userId: Int?, limit: Int?, page: Int?) = flow {
         emit(Result.Loading())
         kotlin.runCatching {
+            val formatUserId = "\"$userId\""
             apiService.getListProfileLiveStream(
-                userId = userId,
+                userId = formatUserId,
                 limit = limit,
                 page = page
             )
@@ -1146,7 +1147,8 @@ class ApiRepositoryImpl @Inject constructor(
 
     override suspend fun getUserFollowing(userId: Int?) = flow {
         emit(Result.Loading())
-        kotlin.runCatching { apiService.getUserFollowing(userId) }
+        val formatUserId = "\"$userId\""
+        kotlin.runCatching { apiService.getUserFollowing(formatUserId) }
             .onSuccess {
                 if (it.isSuccessful) {
                     it.body()?.let { response ->

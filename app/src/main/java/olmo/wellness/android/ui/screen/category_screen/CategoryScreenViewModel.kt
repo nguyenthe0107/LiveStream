@@ -1,5 +1,6 @@
 package olmo.wellness.android.ui.screen.category_screen
 
+import android.util.Log
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -59,6 +60,7 @@ class CategoryScreenViewModel @Inject constructor(
     }
 
     private fun getCategoryList() {
+        Log.e("WTF", "  getCategoryList() ")
         viewModelScope.launch {
             getProductCategoriesFromServiceUseCase(
                 GetProductCategoriesFromServiceUseCase.Params(
@@ -81,6 +83,7 @@ class CategoryScreenViewModel @Inject constructor(
                         }
                     }
                     is Result.Error -> {
+                        Log.e("WTF", " error ${it?.message}")
                         it.message?.let { errorMessage ->
                             _error.value = errorMessage
                         }

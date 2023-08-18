@@ -65,7 +65,7 @@ class AccessTokenWrapper @Inject constructor(
         return loginData?.accessToken?.token.orEmpty()
     }
 
-    private fun saveAccessToken(loginData: LoginData?) {
+    fun saveAccessToken(loginData: LoginData?) {
         loginData?.let {
             CoroutineScope(Dispatchers.IO).launch {
                 setUserInfoUseCase(

@@ -400,13 +400,10 @@ fun CardViewCompose(
                 viewModel.loginWithUserPass(
                     /*email,
                     password,*/
-                    /*"seddahadegri-4563@yopmail.com",*/
-                    /*"recoxebrevu-4516@yopmail.com",
-                    "Aa12345@",*/
-                    /*"kepler_store@yopmail.com",
-                    "12345@Ab",*/
-                    "bautoidem942@gmail.com",
-                            "Aa12345@",
+                    /*"olmohandover@gmail.com",
+                    "Hook@030323",*/
+                    "albawellness@yopmail.com",
+                    "Hook@030323",
                     TrackingConstants.TRACKING_VALUE_SIGNIN_EMAIL
                 )
             }

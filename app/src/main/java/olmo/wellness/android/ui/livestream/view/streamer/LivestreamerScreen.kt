@@ -799,7 +799,7 @@ fun LiveStreamerScreen(
     SelectCategoryBottomSheet(
         modalBottomSheetState = modalSelectCategoryBottomSheetSate,
         onCategorySelected = { categorySelected ->
-            if (categorySelected != null && categorySelected.isNotEmpty()) {
+            if (!categorySelected.isNullOrEmpty()) {
                 categoryListSelected.addAll(categorySelected)
                 fillDataLiveStream.value = fillDataLiveStream.value.copy(
                     listCategory = categoryListSelected.distinctBy { it.id }

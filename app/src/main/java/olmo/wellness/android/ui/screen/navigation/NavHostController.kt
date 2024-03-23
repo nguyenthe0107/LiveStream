@@ -93,9 +93,6 @@ import olmo.wellness.android.ui.screen.verify_code_screen.VerifyCodeScreen
 import olmo.wellness.android.ui.screen.verify_code_screen.VerifyCodeSuccessScreen
 import olmo.wellness.android.ui.sub_categories.screen.SubCategoriesScreen
 import java.lang.Exception
-import java.net.URLDecoder
-import java.net.URLEncoder
-import java.nio.charset.StandardCharsets
 
 @ExperimentalFoundationApi
 @OptIn(

@@ -64,7 +64,7 @@ android {
             buildConfigField 'String', 'SOCKET_API_URL', SOCKET_URL_PRO
             buildConfigField 'String', 'CHAT_SERVER_URL_PRO', CHAT_SERVER_URL_PRO
             buildConfigField 'String', 'UPLOAD_URL_PRO', UPLOAD_URL_PRO
-            minifyEnabled false // TODO
+            minifyEnabled false
             debuggable true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             //signingConfig signingConfigs.release

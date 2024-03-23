@@ -39,8 +39,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
-const val cacheSize = (5 * 1024 * 1024).toLong()
-
+const val ORIGIN = "https://dev-api.kepler.asia/wellness"
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
@@ -71,12 +70,15 @@ object NetworkModule {
         okHttpClientBuilder.addInterceptor(authInterceptor)
         okHttpClientBuilder.addInterceptor { chain ->
             val newRequestBuilder = chain.request().newBuilder()
-                .header("Origin", "https://dev-api.kepler.asia/wellness")
-            chain.proceed(newRequestBuilder.build())
+                .header("Origin", ORIGIN)
+            return@addInterceptor chain.proceed(newRequestBuilder.build())
         }
+        okHttpClientBuilder.followRedirects(true)
+        okHttpClientBuilder.followSslRedirects(true)
         okHttpClientBuilder.connectTimeout(30L, TimeUnit.SECONDS)
         okHttpClientBuilder.readTimeout(30L, TimeUnit.SECONDS)
         okHttpClientBuilder.authenticator(tokenAuthenticator)
+        okHttpClientBuilder.retryOnConnectionFailure(true)
         return okHttpClientBuilder
     }
 
@@ -112,7 +114,7 @@ object NetworkModule {
 
         client.addInterceptor { chain ->
             val newRequestBuilder = chain.request().newBuilder()
-                .header("Origin", "https://dev-api.kepler.asia/wellness")
+                .header("Origin", ORIGIN)
             val originalRequest = chain.request()
             val shouldAddAuthHeaders = originalRequest.headers[Constants.IS_AUTHORIZABLE] != "false"
             if (shouldAddAuthHeaders) {

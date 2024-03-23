@@ -91,6 +91,7 @@ class CreateScheduleLivestreamViewModel @Inject constructor(
                 serviceIds = fillDataSchedule.value.servicesId ?: emptyList()
             )
             livestreamUseCase.requestLivestream(request).collect { res ->
+                Log.e("WTF", "handleRequestLiveStream: ".plus("-->from CreateScheduleLivestreamViewModel"))
                 res.onResultReceived(
                     onSuccess = {
                         navController?.popBackStack()

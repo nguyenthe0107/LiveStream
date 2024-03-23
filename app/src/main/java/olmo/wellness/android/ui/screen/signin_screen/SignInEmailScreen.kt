@@ -395,15 +395,15 @@ fun CardViewCompose(
         PrimaryLiveButton(
             modifier = Modifier.fillMaxWidth(),
             stringResource(id = R.string.tv_login),
-            enable = true, //enableButton
+            enable = enableButton, //enableButton
             onClickFunc = {
                 viewModel.loginWithUserPass(
-                    /*email,
-                    password,*/
+                    email,
+                    password,
                     /*"olmohandover@gmail.com",
-                    "Hook@030323",*/
+                    "Hook@030323",*//*
                     "albawellness@yopmail.com",
-                    "Hook@030323",
+                    "Hook@030323",*/
                     TrackingConstants.TRACKING_VALUE_SIGNIN_EMAIL
                 )
             }

@@ -95,6 +95,7 @@ class LivestreamViewModel @Inject constructor(
         println("Start broadcast")
         viewModelScope.launch {
             try {
+                Log.e("WTF", "handleRequestLiveStream: ".plus("-->from LivestreamViewModel"))
                 val request = LiveStreamRequest(title = "test_live")
                 livestreamUseCase.requestLivestream(request).collect { res ->
                     livestreamId = res.data?.livestreamId

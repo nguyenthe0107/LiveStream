@@ -37,9 +37,13 @@ class AuthInterceptor @Inject constructor(private val accessTokenWrapper: Access
                 Log.e("WTF", " accessToken $accessToken")
                 Log.e("WTF", " mes " + errorMes?.message?.lowercase(Locale.ROOT)?.trim())
                 val errorInvalid = "invalid user token"
-                if ((response.code == 401 || response.code == 403) && errorMes.message.isNotEmpty() && errorMes.message.lowercase(
+                val expired = "jwt expired"
+                if ((response.code == 401 || response.code == 403) && errorMes.message.isNotEmpty() && (errorMes.message.lowercase(
                         Locale.ROOT
-                    ).trim().contains(errorInvalid)){
+                    ).trim().contains(errorInvalid)) || errorMes?.message?.lowercase(
+                        Locale.ROOT
+                    )?.trim()?.contains(expired) == true
+                ){
                     observer.observe(true)
                     Log.e("WTF", " observer.observe(true) $url")
                     return response

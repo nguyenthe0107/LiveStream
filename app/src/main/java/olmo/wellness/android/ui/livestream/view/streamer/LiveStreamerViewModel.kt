@@ -22,6 +22,7 @@ import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
+import androidx.compose.runtime.Stable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -67,6 +68,7 @@ import olmo.wellness.android.webrtc.rtc.RtcUtils
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.util.concurrent.ExecutionException
+import javax.annotation.concurrent.Immutable
 import javax.inject.Inject
 
 const val SLOT_CAMERA_NAME = "camera"
@@ -525,9 +527,12 @@ class LiveStreamerViewModel @Inject constructor(
                     _isLoading.value = true
                 },
                 onSuccess = {
+                    Log.e("Live", "handleRequestLiveStream: ${it?.channel} -- ${it?.streamKey}" )
                     livestreamId = it?.livestreamId
                     _roomLSID.value = it?.roomChatId
-                    broadcastSession?.start(it?.channel, it?.streamKey)
+                    viewModelScope.launch(Dispatchers.Main) {
+                        broadcastSession?.start(it?.channel, it?.streamKey)
+                    }
                     _isLoading.value = false
                     viewModelScope.launch(Dispatchers.IO) {
                         sharedPrefs.setTimeLiveCreated(System.currentTimeMillis())
